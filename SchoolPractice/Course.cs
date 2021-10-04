@@ -9,12 +9,19 @@ namespace SchoolPractice
         public Teacher Instructor { get; set; }
         public List<Student> enrolledStudents { get; set; }
 
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
 
-        // TODO: Add your custom 'ToString' method here. Make sure it returns a well-formatted string rather than
-        //  just the class fields.
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
 
-
-        // TODO: Add your custom 'Equals' method here. Consider which fields should match in order to call two
-        //  Course objects equal.
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
